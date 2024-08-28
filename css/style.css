@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+:root {
+    --dark-color: #23155B;
+    --light-color: #FBFAFF;
+    --purple-color: #8053FF;
+    --divider-color: #F4F5F4;
+    --join-color: #D4CDEF;
+
+
+
+}
+
+/* start navbar */
+.navbar {
+    height: 116px;
+}
+
+.navbar .navbar-brand {
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark-color);
+    padding: 4px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+
+.navbar .primary-button {
+    background-color: var(--purple-color);
+    width: 121px;
+    padding: 12px 24px;
+    font-weight: 500;
+}
+
+.navbar .primary-button:hover {
+    border: 1px solid var(--purple-color);
+    color: var(--purple-color);
+}
+
+/* end navbar */
+
+/* start landing */
+
+
+.landing {
+    padding-bottom: 200px;
+}
+
+.landing .row {
+    padding: 10px;
+    height: 596px;
+    background-color: var(--light-color);
+    border-radius: 24px;
+    background-image: url(../imgs/bg.png);
+}
+
+.landing .secondary-button,
+.projects .secondary-button {
+    color: var(--purple-color);
+    border: 1px solid var(--purple-color);
+    margin: 10px;
+    padding: 12px 24px;
+    width: 232px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.landing .primary-button,
+.projects .primary-button,
+.investors .primary-button {
+    background-color: var(--purple-color);
+    color: white;
+    margin: 10px;
+    padding: 12px 24px;
+    width: 232px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+
+}
+
+.landing h1 {
+    font-weight: 700;
+    color: var(--dark-color);
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.landing p {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--dark-color);
+    line-height: 36px;
+}
+
+/* end landing */
+
+/* start pipeline  */
+
+.pipeline {
+    padding-bottom: 48px;
+
+}
+
+.pipeline span,
+.partnership span {
+    background-color: white;
+}
+
+.pipeline h5,
+.partnership h5 {
+    color: var(--dark-color);
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+}
+
+.pipeline h5::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: var(--divider-color);
+    left: 0;
+    top: 50%;
+    width: 480.5px;
+    height: 2px;
+    z-index: -2;
+}
+
+.pipeline h5::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: var(--divider-color);
+    right: 0;
+    top: 50%;
+    width: 480.5px;
+    height: 2px;
+    z-index: -2;
+}
+
+/* end pipeline  */
+
+
+/* start traditional */
+.traditional .row {
+    padding: 200px 0;
+}
+
+.traditional h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 2%;
+    color: var(--dark-color);
+}
+
+.traditional h1 span {
+    color: var(--purple-color);
+}
+
+.traditional .box {
+    padding: 24px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 14px 64px -4px #23155B0D, 0px 8px 12px -6px #23155B0D;
+}
+
+.traditional .number {
+    color: var(--purple-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.traditional .text {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+
+
+
+/* end traditional */
+
+/* start projects */
+.projects {
+    background-color: var(--light-color);
+    background-image: url(../imgs/bg\ \(1\).png);
+    background-repeat: no-repeat;
+    border-radius: 250px 0 0 0;
+    padding: 200px 0;
+}
+
+.projects .pro {
+    margin: 40px;
+}
+
+.projects .title {
+    margin: 12px;
+}
+
+.projects h6,
+.investors h6 {
+    color: var(--purple-color);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.projects h2,
+.investors h2 {
+    color: var(--dark-color);
+    font-weight: 700;
+    size: 52px;
+    line-height: 64px;
+    letter-spacing: 2%;
+}
+
+.projects h2 span,
+.investors h2 span {
+    color: var(--purple-color);
+}
+
+.projects p {
+    color: var(--dark-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 616px;
+}
+
+.projects .box,
+.investors .box {
+    padding: 24px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 14px 64px -4px #23155B0D, 0px 8px 12px -6px #23155B0D;
+    background-color: white;
+}
+
+.projects .box h5,
+.investors .box h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark-color);
+}
+
+.projects .box p {
+    color: #928CAB;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+
+/* end projects */
+
+/* start investors */
+
+.investors {
+    background-image: url(../imgs/bg\ \(1\).png);
+    background-color: var(--light-color);
+    background-repeat: no-repeat;
+    border-radius: 0 250px 0 0;
+    padding: 200px 0;
+}
+
+.investors .row span {
+    color: var(--purple-color);
+}
+
+/* end investors */
+
+/*  strat  brought */
+.brought {
+    padding-bottom: 200px;
+
+}
+
+.brought .images {
+    background-image: url(../imgs/Group\ 4\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.brought .images .img1 {
+    border-radius: 0 200px 200px 0;
+
+}
+
+
+
+
+.brought .textinner {
+    margin: 20px;
+    max-width: 550px;
+
+
+}
+
+
+.brought .img3 {
+    width: 104px;
+    height: 119px;
+}
+
+.brought h2 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 2%;
+    color: var(--dark-color);
+}
+
+.brought h2 span {
+    color: var(--purple-color);
+}
+
+.brought p {
+    color: var(--dark-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/*  end  brought */
+/* start partnership */
+.partnership {
+    padding-bottom: 200px;
+    margin: 50px;
+}
+
+.partnership h5::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: var(--divider-color);
+    left: 0;
+    top: 50%;
+    width: 296.5px;
+    height: 2px;
+    z-index: -2;
+}
+
+.partnership h5::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: var(--divider-color);
+    right: 0;
+    top: 50%;
+    width: 296.5px;
+    height: 2px;
+    z-index: -2;
+}
+
+/* end partnership */
+
+/* start join */
+.join {
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: 250px 0 0 0;
+}
+
+.join .all {
+    margin-top: 100px;
+}
+
+.join .title h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 2%;
+}
+
+.join .title span {
+    color: var(--purple-color);
+}
+
+.join .title p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--join-color);
+
+}
+
+.join label {
+    color: var(--join-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.join input {
+    padding: 14px 12px;
+    border-radius: 8px;
+    border: 2px 0px 0px 0px;
+    border-color: #F4F5F4;
+    opacity: 0px;
+
+}
+
+.join .primary-button {
+    background-color: var(--purple-color);
+    color: white;
+    padding: 12px 24px;
+    width: 232px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.join .icons i {
+    width: 60px;
+    color: var(--join-color);
+}
+
+.join a {
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: right;
+    color: var(--join-color);
+}
+
+.join form .row p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgb(212, 83, 83);
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* end join */
